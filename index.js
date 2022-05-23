@@ -51,7 +51,7 @@ export async function handler(event) {
       content = array
         .slice(1)
         .join("\n")
-        .replace(/\r?\n/, "\n")
+        .replace(/\r?\n/g, "\n")
     } else {
       content = ""
     }
